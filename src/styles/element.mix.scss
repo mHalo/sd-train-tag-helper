@@ -1,0 +1,171 @@
+:root{
+    --el-font-family: 'PingFang',"苹方",Verdana,'Microsoft YaHei',Sans-Serif, monospace,Menlo,Helvetica,Arial;
+    --el-border-radius-base: 1px;
+    --el-component-size-large: 44px;
+    --el-component-size: 36px;
+    --el-component-size-small: 32px;
+    --el-menu-active-color: #e9f6fe;
+    --el-menu-active-bg-color: #e9f6fe;
+    --el-menu-hover-bg-color: #e9f6fe;
+    --el-menu-submenu-bg-color: #fafafa;
+    .el-drawer{
+        --el-drawer-bg-color: #edf0ff;
+    }
+}
+.dark:root{
+    --el-menu-bg-color: #041527;
+    --el-menu-text-color: #8895c7;
+    --el-menu-active-color: #fff;
+    --el-menu-active-bg-color: #1b2e43;
+    --el-menu-hover-bg-color: #1b2e43;
+    --el-menu-hover-text-color: #fff;
+    --el-menu-submenu-bg-color: #020d19;
+
+    .el-drawer{
+        --el-drawer-bg-color: #001258;
+    }
+}
+.el-message{
+    --el-message-padding: 10px 20px!important;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    border-width: 0!important;
+    border-radius: 5px!important;
+    &.el-message--info{
+        --el-message-bg-color:  #fff;
+        --el-message-border-color:  #fff;
+        --el-message-text-color: rgba(0,0,0,0.78);
+    }
+    .el-message__content{
+        line-height: 22px;
+    }
+}
+.el-message-box{
+    --el-messagebox-border-radius: 0!important;
+    --el-messagebox-padding-primary: 18px!important;
+    padding-bottom: 12px!important;
+    .el-message-box__title{
+        height: 30px;
+        line-height: 30px;
+    }
+    .el-message-box__content{
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+    .el-message-box__headerbtn{
+        top: 0;
+        height: 52px;
+        line-height: 58px;
+        font-size: var(--el-message-close-size,20px);
+    }
+}
+.el-notification{
+    --el-notification-radius:  0!important;
+    --el-notification-padding: 16px 28px 16px 15px!important;
+}
+.el-dialog{
+    .el-dialog__header{
+        border-bottom: 1px solid var(--el-border-color-light);
+        padding-top: 16px;
+        padding-bottom: 12px;
+        margin-right: 0;
+    }
+    .el-dialog__headerbtn{
+        top: 0;
+        height: 52px;
+        line-height: 58px;
+        font-size: var(--el-message-close-size,20px);
+    }
+    .el-dialog__footer{
+        border-top: 1px solid var(--el-border-color-light);
+        padding-bottom: 12px;
+    }
+    &.full-body{
+        .el-dialog__body{
+            padding: 0;
+        }
+    }
+}
+.el-table{
+    --el-table-header-bg-color: #fafafa!important;
+    &.el-table--large th.el-table__cell{
+        padding: 16px 0;
+    }
+}
+.el-pagination{
+    &.center{
+        justify-content: center;
+    }
+    &.right{
+        justify-content: flex-end;
+    }
+    &.left{
+        justify-content: flex-start;
+    }
+    &>button,
+    &>span,
+    &>ul{
+        margin: 0 16px;
+    }
+    &>.el-pager{
+        margin: 0 2px;
+        li{
+            border-radius: 0!important;
+        }
+    }
+    .el-pagination__sizes .el-select .el-input,
+    .el-pagination__jump .el-input
+    {
+        height: 32px!important;
+        line-height: 32px!important;
+    }
+}
+.el-form{
+    .el-form-item__label{
+        height: 40px;
+        line-height: 40px;
+    }
+}
+.el-drawer{
+    .el-drawer__header{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        backdrop-filter: saturate(50%) blur(8px);
+        -webkit-backdrop-filter: saturate(50%) blur(8px);
+    }
+}
+.el-card{
+    // border-color: transparent!important;
+    --el-card-border-radius: 0!important;
+    // --el-card-border-color: #fff!important;
+    --el-box-shadow-light:0px 0px 30px -6px rgba(0, 0, 0, 0.12);
+    &.full-body{
+        .el-card__body{
+            padding: 0;
+        }
+    }
+}
+.el-tabs{
+    &.el-tabs--card{
+        .el-tabs__header {
+            
+            .el-tabs__nav {
+                border-radius: 0!important;
+
+                .el-tabs__item:focus-visible{
+                    box-shadow: none;
+                }
+            }
+
+            .el-tabs__nav-next, .el-tabs__nav-prev{
+                font-size: 20px;
+                height: 42px;
+            }
+        }
+    }
+}
+.el-button{
+    &.is-circle{
+        padding: 2px;
+        width: 32px;
+    }
+}

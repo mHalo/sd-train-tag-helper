@@ -1,0 +1,80 @@
+
+*,
+*::before,
+*::after {
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PingFang',"苹方",Verdana,'Microsoft YaHei',Sans-Serif, monospace,Menlo,Helvetica,Arial;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "苹方" , Verdana,"Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  font-weight: normal;
+}
+
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+figure,
+figcaption {
+  margin: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 清除点击出现虚拟框 */
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:link,
+  &:visited {
+    color: #333;
+    text-decoration: none;
+  }
+}
+
+a img {
+  border: none;
+}
+
+/* 清除浮动 */
+.clearfix {
+  &:after {
+    display: block;
+    content: "\200B";
+    clear: both;
+    height: 0;
+  }
+}
