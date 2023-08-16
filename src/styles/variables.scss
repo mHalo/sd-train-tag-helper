@@ -1,0 +1,24 @@
+/** global */
+$common-pd: 12px;
+
+$size-mini:2;
+$size-half:6;
+$size-small:8;
+$size-normal:12;
+$size-large:16;
+$size-larger:20;
+
+$size-mini-px: #{$size-mini}px;
+$size-half-px: #{$size-half}px;
+$size-small-px: #{$size-small}px;
+$size-normal-px: #{$size-normal}px;
+$size-large-px: #{$size-large}px;
+$size-larger-px: #{$size-larger}px;
+
+/** common */
+$size-name-map: ($size-mini,'-mini'),
+($size-half,'-half'),
+($size-small,'-small'),
+($size-normal,''),
+($size-large,'-large'),
+($size-larger,'-larger');

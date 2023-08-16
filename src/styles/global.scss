@@ -1,0 +1,17 @@
+/** reset*/
+@import './reset.scss';
+
+/** 变量定义*/
+@import './variables.scss';
+
+/** 通用模块*/
+@import './common.scss';
+
+/** element样式 */
+@import './element.mix.scss';
+
+/** transition */
+@import './transition.scss';
+
+/** app样式 */
+@import './app.scss';
