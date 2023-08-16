@@ -311,7 +311,7 @@ const reuseCategory = (key) => {
             height: 100%;
             background-color: #fff;
             box-shadow: 0 0 24px -12px rgba(0, 0, 0, 0.2);
-            padding: 5vw;
+            padding:2vw 5vw 5vw;
             .block-header {
                 height: 42px;
                 line-height: 42px;
